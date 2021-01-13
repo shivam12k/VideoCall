@@ -36,5 +36,5 @@ io.on('connection', socket => {
 
 
 
-PeerServer.listen(3040)
-server.listen(3030)
+PeerServer.listen(process.env.PORT || 3040)
+server.listen(process.env.PORT || 3030)
